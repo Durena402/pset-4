@@ -13,9 +13,9 @@ while ((lowerBound > upperBound) || (Number.isNaN(lowerBound)) || (Number.isNaN(
 }
 
 for (let i = lowerBound; i <= upperBound; i++) {
-  if (i % 2 ===0){
+  if (i % 2 === 0){
     sum += i;
   }
 }
 sum = sum.toLocaleString ("en");
-console.log("\n" + sum + ".")
+console.log("\n" + sum + ".\n")

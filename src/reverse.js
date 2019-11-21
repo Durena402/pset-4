@@ -9,10 +9,15 @@ while ((num < Min) || (num > Max) || Number.isNaN(num) || (!Number.isInteger(num
   num = Number(readlineSync.question("Positive integer: "));
 }
 
-
+let digits = "";
+let digit = 0;
 while (num > 0) {
-  let digit = num % 10;
+  digit = num % 10;
   num = Math.floor(num / 10);
-
-  console.log(mylet);
+  if (num < .1) {
+    digits = digits + digit + ".";
+  } else {
+  digits = digits + digit + ", "
+  }
 }
+console.log("\n" + digits + "\n");
