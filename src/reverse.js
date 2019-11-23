@@ -14,7 +14,7 @@ let digit = 0;
 while (num > 0) {
   digit = num % 10;
   num = Math.floor(num / 10);
-  if (num < .1) {
+  if (num < 1) {
     digits = digits + digit + ".";
   } else {
   digits = digits + digit + ", "
