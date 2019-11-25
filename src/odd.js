@@ -11,6 +11,7 @@ while ((num < Min) || (num > Max) || Number.isNaN(num) || (!Number.isInteger(num
 
 sum = 0;
 digit = 0;
+
 while (num > 0) {
   let digit = num % 10;
   num = Math.floor(num / 10);

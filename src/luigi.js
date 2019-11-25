@@ -8,9 +8,11 @@ let num = Number(readlineSync.question("\nHeight: "));
 while ((num < Min) || (num > Max) || Number.isNaN(num) || (!Number.isInteger(num)))  {
   num = Number(readlineSync.question("Height: "));
 }
+
 console.log("");
+
 let row;
-let value = "#";
+
 for (let i = 1; i <= num; i++) {
   row = "";
   second = "";
@@ -25,4 +27,5 @@ for (let i = 1; i <= num; i++) {
   }
   console.log(row + "#" + "  "+ second + "#");
 }
+
 console.log("");

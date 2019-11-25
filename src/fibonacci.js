@@ -12,7 +12,7 @@ let a = 0, b = 1, f = 1;
 for(var i = 2; i <= num; i++) {
    f = a + b;
    a = b;
-   b = f
+   b = f;
  }
- f = f.toLocaleString("en")
+f = f.toLocaleString("en");
 console.log("\n" + f + ".\n");

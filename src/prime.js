@@ -8,6 +8,7 @@ let num = Number(readlineSync.question("\nNon-negative integer: "));
 while ((num < Min) || (num > Max) || Number.isNaN(num) || (!Number.isInteger(num)))  {
   num = Number(readlineSync.question("Non-negative integer: "));
 }
+
 let value;
 
 for (let i = 2; i < num; i++) {
@@ -17,9 +18,5 @@ for (let i = 2; i < num; i++) {
   } else {
     value = "Prime."
   }
-  //if (num % i !== 0) {
-    //value = "Prime."
-  //}
 }
-
 console.log("\n" + value + "\n")

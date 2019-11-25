@@ -9,15 +9,14 @@ while ((num < Min) || (num > Max) || Number.isNaN(num) || (!Number.isInteger(num
   num = Number(readlineSync.question("Positive integer: "));
 }
 
-digit = 0;
-i = 0;
-
-while (i <= num){
+final = ""
+for(let i = 2; i < (num / i); i++){
   if ( num % i == 0){
-    digit = digit + i + " ";
+   final +=  ", " + i + ", ";
+   final += (num / i) + "";
   }
-  i++;
 }
-console.log("\n" + digit + "\n");
-
-//NEED TO ORDER!!!
+if (num % Math.sqrt(num) == 0){
+  final += ", " + Math.sqrt(num);
+}
+console.log("\n1, " + num + final + ".\n")
